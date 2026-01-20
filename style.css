@@ -1,0 +1,166 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #eef2f7, #dbeafe);
+    color: #1f2937;
+    text-align: center;
+}
+
+/* Header */
+.header {
+    padding: 40px 20px;
+    background-color: #1e293b;
+    color: #ffffff;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.header p {
+    margin-top: 8px;
+    font-size: 16px;
+    color: #cbd5f5;
+}
+
+/* Header Layout */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 30px 20px;
+    background-color: #1e293b;
+    color: #ffffff;
+}
+
+/* Header Text */
+.header-text {
+    text-align: center;
+}
+
+/* Profile Photo - Top Left */
+.profile-pic {
+    width: 90px;          /* Increased size */
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    border: 3px solid #ffffff;
+}
+
+
+/* Navigation */
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    background-color: #ffffff;
+    padding: 14px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Task 4: Active navigation highlight */
+.nav a.active {
+    border-bottom: 2px solid currentColor;
+}
+
+/* Task 4: Keyboard accessibility improvement */
+.nav a:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 4px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #1e293b;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #2563eb;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* Content Section */
+.content {
+    margin-top: 40px;
+}
+
+/* Skills Section */
+.skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 40px auto;
+    max-width: 900px;
+}
+
+/* Skill Cards */
+.card {
+    width: 100%;
+    max-width: 220px;
+    min-height: 90px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer */
+.footer {
+    margin: 50px 0 30px;
+    font-size: 14px;
+    color: #475569;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .skills {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header h1 {
+        font-size: 26px;
+    }
+
+    @media screen and (max-width: 768px) {
+    .profile-pic {
+        width: 70px;
+        height: 70px;
+        left: 15px;
+        top: 15px;
+    }
+    
+}
+
+}
